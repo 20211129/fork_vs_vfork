@@ -1,7 +1,7 @@
 node {
     def app
     stage('Clone repository') {
-        git 'https://github.com/20211129@sungshin.ac.kr/fork_vs_vfork.git'
+        git 'https://github.com/20211129/fork_vs_vfork.git'
     }
     stage('Build image') {
         app = docker.build("yr20211129/test")
